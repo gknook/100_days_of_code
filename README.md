@@ -1,6 +1,18 @@
 Mimi's 100 Days of Code
 =======================
 
+## Guido's challenges
+1. Work through Eloquent Javascript (eloquentjavascript.net)
+2. Work through the playground app for Swift
+3. Code own project
+
+### Status Day 1
+- Imported earlier notes from EJ (Excercises of Chapter 1 through 4 & comments)
+- Worked on playground app
+-- Parameters: Crank Up and Down
+
+## Mimi Challenge Instructions
+
 ### Getting Started
 
 1. Fork this repo
