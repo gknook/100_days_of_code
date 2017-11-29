@@ -10,6 +10,34 @@ Mimi's 100 Days of Code
 - Imported earlier notes from EJ (Excercises of Chapter 1 through 4 & comments)
 - Worked on playground app
 -- Parameters: Crank Up and Down
+-- Parameters: Placing at a Specific Location
+-- Parameters: Rivers to Cross
+-- Parameters: Placing Two Characters
+-- Parameters: Two Experts
+
+### Status Day 0
+- Excercises Chapter 2, 3 & 4 of EJ
+- Playground 'Learn to Code 2'
+-- Variables: Keeping Track
+-- Variables: Bump Up the Value
+-- Variables: Incrementing the Value
+-- Variables: Seeking Seven Gems
+-- Variables: Three Gems, Four Switches
+-- Variables: Checking for Equal Values
+-- Variables: Round up the Switches
+-- Variables: Collect the Total
+-- Types: Deactivating your portal
+-- Types: Portal On and Off
+-- Types: Setting the Right Portal
+-- Types: Corners of the World
+-- Types: Random Gems Everywhere
+-- Initialization: Initializing You Expert
+-- Initialization: Train Your Expert
+-- Initialization: Using Instances of Different Types
+-- Initialization: It Takes Two
+-- Parameters: Moving Further Forward
+-- Parameters: Generalizing a function
+
 
 ## Mimi Challenge Instructions
 
