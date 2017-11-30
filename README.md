@@ -6,6 +6,14 @@ Mimi's 100 Days of Code
 2. Work through the playground app for Swift
 3. Code own project
 
+### Status Day 2
+- Worked on playground app
+- - Parameters: Twin Peaks
+- - World Building: Uniting Worlds
+- - World Building: Connect and Solve
+- - World Building: Making Your Own Portals
+- - World Building: Reach for the Stars
+
 ### Status Day 1
 - Imported earlier notes from EJ (Excercises of Chapter 1 through 4 & comments)
 - Worked on playground app
