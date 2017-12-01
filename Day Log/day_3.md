@@ -1,4 +1,4 @@
-### Status Day 2
+### Status Day 3
 - Worked on playground app
 - - World Building: Floating Islands
 
