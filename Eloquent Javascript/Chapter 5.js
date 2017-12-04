@@ -47,12 +47,70 @@ ancestry.forEach(function(person) {
 // Append those ages to an array
 // Calculate the average of the array
 var ageMothers = [];
-ancestry.forEach(function(person) {
-  var mother = byName[person.mother]; //this is wrong, don't know how to fix it now though. 
-  //Challenge for tomorrow.
-  var ageMother = person.born - mother.born;
-  ageMothers.push(ageMother);
+ancestry.forEach(function(person) { // For every person in the file.
+  var mother = byName[person.mother]; // Get the name of the mother [person.mother], and use that name to reference the object.
+  if (mother != null) { // Only if there is a mother.
+	  var ageMother = person.born - mother.born; // Calculate the mother's age at child's birth
+	  ageMothers.push(ageMother); // Push that age to an array
+  }
 });
-console.log(average(ageMothers));
 
+console.log(average(ageMothers)); // Average the array
 // → 31.2
+
+
+// 5.3 - Historical life expectancy
+/* When we looked up all the people in our data set that lived more than 90 years, only the 
+latest generation in the data came out. Let’s take a closer look at that phenomenon. Compute 
+and output the average age of the people in the ancestry data set per century. A person is 
+assigned to a century by taking their year of death, dividing it by 100, and rounding it up, 
+as in Math.ceil(person.died / 100). For bonus points, write a function groupBy that abstracts 
+the grouping operation. It should accept as arguments an array and a function that computes 
+the group for an element in the array and returns an object that maps group names to arrays 
+of group members.*/
+
+// Average age of people per century
+// Century defined by Math.ceil(person.died / 100)
+
+function average(array) {
+  function plus(a, b) { return a + b; }
+  return array.reduce(plus) / array.length;
+}
+
+var sixT = [];
+var sevT = [];
+var eigT = [];
+var ninT = [];
+var tweT = [];
+var twfT = [];
+ancestry.forEach(function(person) { // For each person in ancestry
+  var age = person.died - person.born; // Calculate their age
+  var century = Math.ceil(person.died / 100); // Determine what century
+  //list.century = century;  list.age = age; // Create a new object with age and century
+  //console.log(list);
+  if (century == 16) { // Categorize them by century. I should probably refactor this? -> I'm guessing that is also more the excersize than what I did now.
+    sixT.push(age);
+  } else if (century == 17) {
+    sevT.push(age);
+  } else if (century == 18) {
+    eigT.push(age);
+  } else if (century == 19) {
+    ninT.push(age);
+  } else if (century == 20) {
+    tweT.push(age);
+  } else if (century == 21) {
+    twfT.push(age);
+  }
+});
+
+console.log("16: " + average(sixT));
+console.log("17: " + average(sevT));
+console.log("18: " + average(eigT));
+console.log("19: " + average(ninT));
+console.log("20: " + average(tweT));
+console.log("21: " + average(twfT));
+
+
+
+
+
