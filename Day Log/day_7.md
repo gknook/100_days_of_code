@@ -1,0 +1,17 @@
+### Status Day 7
+- Playgrounds app: Learn to Code 3
+- - Coordinates: Coordinates and Graphics
+- - Coordinates: Adding a Background
+- - Coordinates: Placing Images
+- - Coordinates: Placing Text
+- - Coordinates: Cosmic Bus
+- - Coordinates: Placing an Array of Images
+- - Coordinates: Changing an Array
+- - Coordinates: Eliptical Orbits
+- - Touch Events: The Image Tool
+- - Touch Events: Spacing Out Graphics
+- - Touch Events: Moving and Erasing Graphics
+- - Touch Events: Iterating Through an Array
+- - Touch Events: Randomizing an Array
+- - Touch Events: Going, Going, Gone
+- - Touch Events: Placing in Patterns
