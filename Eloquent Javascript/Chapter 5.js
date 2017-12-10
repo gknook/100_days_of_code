@@ -111,6 +111,83 @@ console.log("20: " + average(tweT));
 console.log("21: " + average(twfT));
 
 
+function average(array) {
+  function plus(a, b) { return a + b; }
+  return array.reduce(plus) / array.length;
+}
 
+function groupBy(array, groupOf) {
+  var groups = {};
+  array.forEach(function(element) {
+    var groupName = groupOf(element);
+    if (groupName in groups)
+      groups[groupName].push(element);
+    else
+      groups[groupName] = [element];
+  }) 
+  return groups;
+};
+
+var byCentury = groupBy(ancestry, function(person) {
+  return Math.ceil(person.died / 100);
+});
+
+for (var century in byCentury) {
+  var ages = byCentury[century].map(function(person) {
+    return person.died - person.born;
+  });
+  console.log(century + ": " + average(ages));
+}
+
+// 5.4 Every Then and Some
+
+function every(array, test) {
+  var trueNess = 0;
+  array.forEach(function(element){
+    if (test(element))
+      trueNess += 1; // Adding one for every element that fits the test
+  });
+  if (array.length == trueNess)
+    return true; // Returning true if every element fit the test
+  else
+    return false; // Returning false otherwise
+};
+
+function some(array, test) {
+  var countTrue = 0;
+  array.forEach(function(element){
+    if (test(element))
+      countTrue += 1; // adding count if element is true.
+  });
+  if (countTrue > 0) // if at least 1 element was true
+    return true;
+  else
+    return false;
+};
+
+function every(array, test) {
+  for (var i = 0; i < array.length; i++) {
+    if (!test(array[i]))
+      return false; //Shorter because it will exit when 1 element is not passing the test.
+  }
+  return true;
+};
+
+function some(array, test) {
+  for (var i = 0; i < array.length; i++) {
+    if (test(array[i]))
+      return true;
+  }
+  return false;
+};
+
+console.log(every([NaN, NaN, NaN], isNaN));
+// → true
+console.log(every([NaN, NaN, 4], isNaN));
+// → false
+console.log(some([NaN, 3, 4], isNaN));
+// → true
+console.log(some([2, 3, 4], isNaN));
+// → false
 
 
